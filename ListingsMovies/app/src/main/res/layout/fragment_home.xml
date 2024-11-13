@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/base_color_background"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Recycler View Movie 1-->
+            <TextView
+                android:id="@+id/txtGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accion"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMovie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <!--Recycler View Movie 1-->
+
+            <!--Recycler View Movie 2-->
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/txtGenr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comedia"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMovie2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <!--Recycler View Movie 2-->
+
+            <!--Recycler View Movie 3-->
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/txtGenr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accion"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMovie3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"/>
+            <!--Recycler View Movie 3-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

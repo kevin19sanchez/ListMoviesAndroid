@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_color_background"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="24dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/demo"
+            />
+
+        <EditText
+            android:id="@+id/edtLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_login_email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="240dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtLoginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_login_pass"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="324dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="406dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="@string/txt_account"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            android:textColorLink="@color/design_default_color_primary_dark"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

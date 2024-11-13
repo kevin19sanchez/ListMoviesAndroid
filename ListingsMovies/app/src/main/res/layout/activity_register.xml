@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/base_color_background"
+    tools:context=".register.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_register"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edtRegistroEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtRegistroPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_pass"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_rsgiter"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
